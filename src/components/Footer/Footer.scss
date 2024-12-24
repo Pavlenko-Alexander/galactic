@@ -1,0 +1,81 @@
+.footer {
+    background-color: #F9F1EE;
+    padding: 64px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__links {
+        display: flex;
+        gap: 46px;
+        margin-top: 24px;
+    }
+
+    &__social-links {
+        margin-top: 28px;
+        display: flex;
+        gap: 24px;
+
+        div {
+            width: 40px;
+            height: 40px;
+            background-color: #7F3A6A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+
+            &:hover {
+                background-color: #E9A923;
+                transition: 150ms linear;
+            }
+        }
+
+        .linkedin-icon {
+            border-radius: 10px;
+        }
+    }
+
+    .contact {
+        margin-top: 28px;
+        font-family: 'Exo';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22.4px;
+    }
+
+    .email {
+        margin-top: 12px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer {
+        padding: 40px 16px;
+
+        &__links {
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+
+            a {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+            }
+        }
+
+        .contact {
+            font-size: 14px;
+            line-height: 19.6px;
+        }
+
+        .email {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}

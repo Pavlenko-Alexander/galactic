@@ -1,0 +1,12 @@
+.link {
+    text-decoration: none;
+    color: #585858;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+
+    &:hover {
+        color: #E9A923;
+        transition: 150ms linear;
+    }
+}
